@@ -1,0 +1,22 @@
+CREATE TABLE `py_mysql`.`job_list`  (
+  `id` int(0) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NULL,
+  `second_level_label` varchar(255) NULL,
+  `experience` varchar(255) NULL,
+	`jobfirstclass` varchar(255) NULL,
+  `jobsecondclass` varchar(255) NULL,
+  `enddate` datetime(0) NULL,
+  `size` varchar(255) NULL,
+  `education` varchar(255) NULL,
+  `first_level_label` varchar(255) NULL,
+  `officialname` varchar(255) NULL,
+  `type` varchar(255) NULL,
+  `salary` varchar(255) NULL,
+  `requirements` varchar(255) NULL,
+  `companydescription` varchar(255) NULL,
+  `loc` varchar(255) NULL,
+  PRIMARY KEY (`id`)
+);
+
+ALTER TABLE `py_mysql`.`job_list` 
+MODIFY COLUMN `companydescription` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL AFTER `requirements`;
